@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    border-top: 10px solid white;
+    border-left: 10px solid rgb(252, 80, 0);
+    border-right: 10px solid rgb(43, 196, 5);
+}
+.container{
+    width: 100%;
+    height: 97vh;
+    background-image: url("./image/sky.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.heading{
+    width: 55%;
+    height: auto;
+    font-size: 48px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.head1{
+    background-color: rgb(252, 80, 0);
+    padding-right: 10px;
+}
+
+.head2{
+    background-color: white;
+}
+
+.head3{
+    background-color:rgb(43, 196, 5);
+    padding-left: 10px;
+}
+
+/* Road */
+.road{
+    width: 500%;
+    height: 200px;
+    display: block;
+    background-image: url('./image/road.jpg');
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: road 10s linear infinite;
+}
+
+@keyframes road{
+    100%{
+        transform: translate(-3400px);
+    }
+}
+
+/* City */
+
+.city{
+    width: 500%;
+    height: 250px;
+    display: block;
+    background-image: url("./image/city.png");
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 10s linear infinite;
+}
+
+@keyframes city{
+    100%{
+        transform: translate(-1400px);
+    }
+}
+
+/* Sun  */
+
+.sun{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    filter: brightness(100%);
+    float: right;
+    box-shadow: 2px 2px 10px #FFD07F,
+        0px 0px 50px 20px #FFD07F,
+        0px 0px 100px 40px #FDA65D,
+        inset 10px 10px 50px #FFF9B6;
+    animation: sun 20s linear infinite;
+}
+
+@keyframes sun{
+    100%{
+        transform: translate(-1400px);
+    }
+}
+
+/* Car */
+.car{
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%);
+    z-index: 2;
+}
+.car img{
+    width: 100%;
+    animation: car 0.6s linear infinite;
+}
+
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+/* Wheel */
+
+.wheel{
+    position: absolute;
+    left: 49.5%;
+    bottom: 125px;
+    z-index: 2;
+    transform: translate(-50%);
+
+}
+
+.wheel img{
+    width: 65px;
+}
+
+.bwheel{
+    position: absolute;
+    bottom: 11px;
+    right: 87px;
+    animation: bwheel 1s linear infinite;
+}
+
+@keyframes bwheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.fwheel{
+    position: absolute;
+    bottom: 11px;
+    left: 126px;
+    animation: fwheel 1s linear infinite;
+}
+
+@keyframes fwheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Flag */
+
+.flag img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 780px;
+    z-index: 3;
+    animation: flag 1s linear infinite;
+}
+
+@keyframes flag{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }    
+}
+
+/*  */
+.header {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer {
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 37%;
+    color: #A9333A;
+} 
+
+.subbox {
+    display: flex;
+    margin: 5em 0 0 33%;
+}
+
+.subbox1_1 {
+    background-color: #89B5AF;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    transform: skewX(-20deg);
+    margin-left: 4em;
+    animation-name: subbox1_1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.subbox2_1 {
+    background-color: #9D84B7;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin-left: 4em;
+    transform: skewY(-20deg);
+    animation-name: subbox2_1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.subbox3_1 {
+    background-color: #89B5AF;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin-left: 4em;
+    animation-name: subbox3_1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.subbox4_1 {
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    margin-left: 4em;
+}
+
+.no {
+    margin-left: 33%;
+}
+
+.subbox4_2 {
+    background-color: #89B5AF;
+    border-color: #105652;
+    animation-name: subbox4_1_1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.subbox4_3 {
+    background-color: #864879;
+    border-color: #3F3351;
+    animation-name: subbox4_1_2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.subbox4_4 {
+    background-color: #6D9886;
+    border-color: #32502E;
+    animation-name: subbox4_1_3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+.footer1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 47%;
+    color: #A9333A;
+}
+
+.foot {
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.footer2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #3F3351;
+    position: absolute;
+    top: 0px;
+}
+
+.container2 {
+    display: grid;
+    justify-content: center;
+    margin-left: 40%;
+    width: 300px;
+    margin-top: 2em;
+}
+
+.transbox {
+    margin-left: 0.3em;
+    background-color: #2FDD92;
+    border: 1px solid #2FDD92;
+    width: 100px;
+    height: 100px;
+}
+
+#transbox1 {
+    transition: width 3s;
+    transform-origin: center;
+    transition-timing-function: ease;
+}
+
+#transbox2 {
+    transform-origin: center;
+    transition: width 3s, height 3s;
+    transition-timing-function: linear;
+}
+
+#transbox3 {
+    transition: width 3s;
+    transform-origin: center;
+    transition-timing-function: ease-in;
+}
+
+#transbox4 {
+    transition: width 3s;
+    transform-origin: center;
+    transition-timing-function: ease-in-out;
+}
+
+#transbox5 {
+    transition-timing-function: ease-out;
+    transition: width 3s;
+    transform-origin: center;
+}
+
+#transbox6 {
+    transition-timing-function: step-end;
+    transition: width 3s;
+    transform-origin: center;
+}
+
+#transbox7 {
+    transition-timing-function: step-start;
+    transition: width 3s;
+    transform-origin: center;
+}
+
+#transbox1:hover {
+    width: 300px;
+}
+
+#transbox2:hover {
+    width: 300px;
+    height: 300px;
+}
+
+#transbox3:hover {
+    width: 300px;
+}
+
+#transbox4:hover {
+    width: 300px;
+}
+
+#transbox5:hover {
+    width: 300px;
+}
+
+#transbox6:hover {
+    width: 300px;
+}
+
+#transbox7:hover {
+    width: 300px;
+}
+
+.gbox {
+    display: flex;
+    margin-top: 2em;
+}
+
+.gno {
+    font-weight: 700;
+    font-size: larger;
+}
